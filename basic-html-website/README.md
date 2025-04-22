@@ -1,0 +1,1 @@
+This project is part of a learning challenge from [roadmap.sh](https://roadmap.sh/). As following their roadmap, I built this [Basic HTML Website](https://roadmap.sh/projects/basic-html-website) project to apply and reinforce the skills I'm learning.
