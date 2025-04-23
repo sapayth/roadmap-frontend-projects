@@ -31,4 +31,17 @@ Build a basic multi-page HTML website to practice layout, navigation, and form h
 
 ---
 
+## 🎨 [Personal Portfolio](https://roadmap.sh/projects/portfolio-website)
+
+Create a professional portfolio website to showcase your projects and skills with modern styling.
+
+**Key Objectives:**
+- ✅ A fully styled, responsive website with the same structure as the previous project.
+- ✅ Consistent use of a chosen color scheme and typography.
+- ✅ Proper use of CSS techniques like Flexbox, media queries, and the box model.
+- ✅ A responsive navigation bar and well-styled contact form.
+- ✅ Use Google Fonts to enhance the typography of your website.
+
+---
+
 Start small, build strong. 🚀
