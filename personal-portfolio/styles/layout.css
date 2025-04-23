@@ -1,0 +1,226 @@
+/* Header and Navigation */
+.header {
+  background-color: var(--nav-bg);
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.nav-brand img {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--border-radius-sm);
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--spacing-md);
+  list-style: none;
+}
+
+.nav-links li {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li:not(:last-child)::after {
+  content: "/";
+  margin-left: var(--spacing-md);
+  color: var(--text-secondary);
+}
+
+.nav-link {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+/* Mobile Navigation */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  cursor: pointer;
+  padding: var(--spacing-xs);
+}
+
+/* Hero Section */
+.hero {
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--spacing-sm);
+}
+
+.hero p {
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Main Content */
+.main-content {
+  padding: var(--spacing-xl) 0;
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.project-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-md);
+  transition: var(--transition-base);
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Experience Section */
+.experience-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.experience-item {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+/* Education Section */
+.education-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.course-list {
+  list-style: none;
+  padding-left: var(--spacing-md);
+}
+
+.course-list li {
+  margin-bottom: var(--spacing-xs);
+  position: relative;
+}
+
+.course-list li::before {
+  content: "•";
+  color: var(--primary-color);
+  position: absolute;
+  left: -1rem;
+}
+
+/* Reviews Section */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.review-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-lg);
+}
+
+.review-text {
+  margin-bottom: var(--spacing-sm);
+}
+
+.reviewer-info {
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: var(--spacing-lg) 0;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-secondary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--nav-bg);
+    padding: var(--spacing-md);
+    flex-direction: column;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    justify-content: center;
+  }
+
+  .nav-links li:not(:last-child)::after {
+    display: none;
+  }
+
+  .nav-links li:not(:last-child) {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .projects-grid,
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --font-size-2xl: 1.75rem;
+    --spacing-xl: 2rem;
+  }
+
+  .container {
+    padding: 0 var(--spacing-xs);
+  }
+} 

@@ -1,0 +1,1 @@
+This project is part of a learning challenge from [roadmap.sh](https://roadmap.sh/). As following their roadmap, I built this [Personal Portfolio](https://roadmap.sh/projects/portfolio-website) project to apply and reinforce the skills I'm learning.
